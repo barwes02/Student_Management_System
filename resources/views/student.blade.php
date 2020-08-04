@@ -15,7 +15,7 @@
 
 <body>
 
-    @include("navbar")
+    @include("navBar")
 
     <div class="row header-container justify-content-center">
         <div class="header">
