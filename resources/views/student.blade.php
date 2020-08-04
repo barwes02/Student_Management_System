@@ -47,16 +47,16 @@
                         <form action="{{ url('/store') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>CNE</label>
-                                <input name="cne" type="text" class="form-control" placeholder="Enter cne" required>
+                                <label>CN</label>
+                                <input name="cne" type="text" class="form-control" placeholder="Enter CN" required>
                             </div>
                             <div class="form-group">
                                 <label>First Name</label>
-                                <input pattern="[A-Za-z]" name=" firstName" type="text" class="form-control" placeholder="Enter First Name" required>
+                                <input pattern="[A-Za-z]{1-30}" name=" firstName" type="text" class="form-control" placeholder="Enter First Name" required>
                             </div>
                             <div class="form-group">
                                 <label>Last Name</label>
-                                <input pattern="[A-Za-z -]" name=" lastName" type="text" class="form-control" placeholder="Enter Last Name" required>
+                                <input pattern="[A-Za-z -]{1-30}" name=" lastName" type="text" class="form-control" placeholder="Enter Last Name" required>
                             </div>
                             <div class="form-group">
                                 <label>Age</label>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Speciality</label>
-                                <input pattern="[A-Za-z -]" name=" speciality" type="text" class="form-control" placeholder="Enter Speciality" required>
+                                <input pattern="[A-Za-z -]{1-30}" name=" speciality" type="text" class="form-control" placeholder="Enter Speciality" required>
                             </div>
                             <input type="submit" class="btn btn-info" value="Save">
                             <input type="reset" class="btn btn-warning" value="Reset">
@@ -101,8 +101,8 @@
                         <form action="{{ url('/update/'.$student->id) }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>CNE</label>
-                                <input value="{{ $student->cne }}" name="cne" type="text" class="form-control" placeholder="Enter cne" required>
+                                <label>CN</label>
+                                <input value="{{ $student->cne }}" name="cne" type="text" class="form-control" placeholder="Enter CN" required>
                             </div>
                             <div class="form-group">
                                 <label>First Name</label>

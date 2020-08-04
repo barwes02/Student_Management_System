@@ -7,7 +7,7 @@
         <table class="table">
             <thead class="thead-light">
                 <tr>
-                    <th scope="col">CNE</th>
+                    <th scope="col">CN</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Age</th>
