@@ -20,7 +20,7 @@
     <script>
 
     </script>
-    <div style="position:absolute;top:50%;left:45.5%;" id="loading" class="spinner-border text-primary" role="status">
+    <div style="position:absolute;top:46%;left:46%;" id="loading" class="spinner-border text-primary" role="status">
         <span class="sr-only">Loading...</span>
     </div>
 
