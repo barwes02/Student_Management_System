@@ -78,7 +78,7 @@
                                     <label>Speciality</label>
                                     <input pattern="[A-Za-z -]{1,30}" name=" speciality" type="text" class="form-control" placeholder="Enter Speciality" required>
                                 </div>
-                                <input id="confirm" type="submit" class="btn btn-info" value="Save">
+                                <input type="submit" class="btn btn-info" value="Save">
                                 <input type="reset" class="btn btn-warning" value="Reset">
                             </form>
 
@@ -132,7 +132,7 @@
                                     <label>Speciality</label>
                                     <input pattern="[A-Za-z -]{1,40}" value=" {{ $student->speciality }}" name="speciality" type="text" class="form-control" placeholder="Enter Speciality" required>
                                 </div>
-                                <input id="confirm" type="submit" class="btn btn-info" value="Update">
+                                <input type="submit" class="btn btn-info" value="Update">
                                 <input type="reset" class="btn btn-warning" value="Reset">
                             </form>
                         </div>
@@ -153,7 +153,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script>
-        $("a, #confirm").click(function() {
+        $("a").click(function() {
+            document.getElementById("loading").style.display = "block"
+            document.getElementById("content").style.display = "none"
+        });
+        $("form").submit(function(event) {
             document.getElementById("loading").style.display = "block"
             document.getElementById("content").style.display = "none"
         });
